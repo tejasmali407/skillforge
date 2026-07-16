@@ -1,5 +1,5 @@
 import { Navigate, Outlet } from 'react-router-dom';
-import Layout from '../components/layout/Layout';
+import DashboardLayout from '../components/layout/DashboardLayout';
 import useAuthStore from '../store/authStore';
 import { Loader2 } from 'lucide-react';
 
@@ -19,9 +19,9 @@ function PrivateRoute() {
   }
 
   return (
-    <Layout>
+    <DashboardLayout>
       <Outlet />
-    </Layout>
+    </DashboardLayout>
   );
 }
 
