@@ -12,20 +12,20 @@ export default function DailyGoal({ user }) {
 
   return (
     <motion.div
+      whileHover={{ y: -4 }}
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.4, delay: 0.2 }}
-      className="h-full"
     >
-      <Card className="h-full shadow-sm border-border/50 bg-background/60 backdrop-blur-md">
-        <CardContent className="p-6 flex flex-col items-center justify-center text-center h-full">
+      <Card className="shadow-sm border-border/40 bg-background/60 backdrop-blur-md rounded-3xl transition-shadow hover:shadow-lg hover:border-border/60">
+        <CardContent className="p-5 flex flex-col items-center justify-center text-center">
           
           <div className="flex items-center gap-2 mb-4">
             <Target className="w-5 h-5 text-primary" />
             <h3 className="font-semibold text-foreground">Daily Goal</h3>
           </div>
 
-          <div className="relative w-32 h-32 mb-4">
+          <div className="relative w-24 h-24 mb-4">
             {/* Background Circle */}
             <svg className="w-full h-full -rotate-90 transform" viewBox="0 0 100 100">
               <circle

@@ -12,7 +12,7 @@ export default function WelcomeHero({ user }) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
     >
-      <Card className="border-0 shadow-xl overflow-hidden relative bg-gradient-to-br from-primary/90 via-primary to-purple-600 text-primary-foreground">
+      <Card className="border-0 shadow-xl overflow-hidden relative bg-gradient-to-br from-primary via-primary/90 to-purple-600 text-primary-foreground rounded-3xl">
 
         {/* Animated Background Blobs */}
         <motion.div

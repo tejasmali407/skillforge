@@ -39,8 +39,8 @@ export default function LearningPaths({ paths }) {
       >
         {paths.map((path) => (
           <motion.div key={path.id} variants={itemVariants} whileHover={path.active ? { y: -6 } : {}}>
-            <Card className={`h-full border-border/50 shadow-sm transition-all duration-300 bg-background/60 backdrop-blur-md overflow-hidden group
-              ${path.active ? 'hover:shadow-lg hover:border-primary/30' : 'opacity-70 bg-muted/20'}`}>
+            <Card className={`h-full flex flex-col border-border/40 shadow-sm transition-shadow duration-300 bg-background/60 backdrop-blur-md overflow-hidden group rounded-3xl
+              ${path.active ? 'hover:shadow-lg hover:border-border/60' : 'opacity-70 bg-muted/20'}`}>
               
               {/* Illustration Placeholder */}
               <div className="h-32 w-full bg-gradient-to-br from-muted to-muted/50 relative overflow-hidden">
@@ -56,7 +56,7 @@ export default function LearningPaths({ paths }) {
                 )}
               </div>
 
-              <CardContent className="p-5 flex flex-col h-[calc(100%-8rem)]">
+              <CardContent className="p-5 flex flex-col flex-1">
                 <div className="flex items-start justify-between mb-2">
                   <h3 className="text-lg font-bold group-hover:text-primary transition-colors line-clamp-1">{path.title}</h3>
                 </div>

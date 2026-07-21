@@ -8,8 +8,8 @@ export default function DailyChallenge({ challenge }) {
   const progressPercentage = (challenge.progress / challenge.total) * 100;
 
   return (
-    <Card className="border-border/50 shadow-sm bg-background/60 backdrop-blur-md overflow-hidden">
-      <CardContent className="p-4 sm:p-5">
+    <Card className="border-border/40 shadow-sm bg-background/60 backdrop-blur-md overflow-hidden rounded-2xl">
+      <CardContent className="p-4">
         <div className="flex items-center gap-2 mb-3">
           <div className="p-1.5 bg-orange-500/10 rounded-lg">
             <Target className="w-4 h-4 text-orange-500" />

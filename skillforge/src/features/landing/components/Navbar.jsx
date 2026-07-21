@@ -73,7 +73,7 @@ export default function Navbar() {
             <div className="flex items-center gap-3">
               <Link 
                 to="/login"
-                className={buttonVariants({ variant: "ghost", className: "hidden lg:inline-flex" })}
+                className={buttonVariants({ variant: "ghost" })}
               >
                 Login
               </Link>

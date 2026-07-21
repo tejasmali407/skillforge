@@ -36,14 +36,13 @@ export default function RecentActivity({ activities }) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay: 0.3 }}
-      className="h-full"
     >
-      <Card className="h-full shadow-sm border-border/50 bg-background/60 backdrop-blur-md">
-        <CardHeader className="pb-4">
+      <Card className="shadow-sm border-border/40 bg-background/60 backdrop-blur-md rounded-3xl max-h-[350px] flex flex-col">
+        <CardHeader className="p-5 pb-4 shrink-0">
           <CardTitle className="text-lg font-bold">Recent Activity</CardTitle>
         </CardHeader>
-        <CardContent>
-          <div className="relative border-l-2 border-border/50 ml-3 pl-6 space-y-6">
+        <CardContent className="p-5 pt-0 overflow-y-auto custom-scrollbar flex-1">
+          <div className="relative border-l-2 border-border/50 ml-3 pl-6 space-y-4">
             {activities.map((activity, index) => (
               <motion.div 
                 key={activity.id}

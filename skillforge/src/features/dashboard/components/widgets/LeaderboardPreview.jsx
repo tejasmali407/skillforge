@@ -5,8 +5,8 @@ export default function LeaderboardPreview({ leaderboard, user: currentUser }) {
   if (!leaderboard || leaderboard.length === 0) return null;
 
   return (
-    <Card className="border-border/50 shadow-sm bg-background/60 backdrop-blur-md">
-      <CardContent className="p-4 sm:p-5">
+    <Card className="border-border/40 shadow-sm bg-background/60 backdrop-blur-md rounded-2xl">
+      <CardContent className="p-4">
         <div className="flex items-center gap-2 mb-4">
           <div className="p-1.5 bg-yellow-500/10 rounded-lg">
             <Medal className="w-4 h-4 text-yellow-500" />

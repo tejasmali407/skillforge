@@ -8,12 +8,12 @@ export default function UpcomingUnlock({ unlock }) {
   const progressPercentage = (unlock.currentLevel / unlock.requiredLevel) * 100;
 
   return (
-    <Card className="border-border/50 shadow-sm bg-background/60 backdrop-blur-md overflow-hidden relative group">
+    <Card className="border-border/40 shadow-sm bg-background/60 backdrop-blur-md overflow-hidden relative group rounded-2xl hover:shadow-md hover:border-border/60 transition-all duration-300">
       
       {/* Background glow on hover */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
       
-      <CardContent className="p-4 sm:p-5 relative z-10">
+      <CardContent className="p-4 relative z-10">
         <div className="flex items-start gap-3">
           <div className="p-2.5 bg-muted rounded-xl border border-border/50">
             <Lock className="w-5 h-5 text-muted-foreground" />

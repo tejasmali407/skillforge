@@ -41,9 +41,9 @@ export default function QuickStats({ stats }) {
         const value = stats[item.key];
         
         return (
-          <motion.div key={item.key} variants={itemVariants} whileHover={{ y: -4 }} transition={{ duration: 0.2 }}>
-            <Card className="border-border/50 shadow-sm bg-background/60 backdrop-blur-md hover:shadow-md transition-shadow">
-              <CardContent className="p-4 sm:p-5 flex flex-col justify-between h-full">
+          <motion.div key={item.key} variants={itemVariants} whileHover={{ y: -4 }} transition={{ duration: 0.2 }} className="h-full">
+            <Card className="border-border/40 shadow-sm bg-background/60 backdrop-blur-md hover:shadow-md hover:border-border/80 transition-all rounded-2xl h-full">
+              <CardContent className="p-5 flex flex-col justify-between h-full">
                 
                 <div className="flex items-center justify-between mb-3">
                   <div className={`p-2.5 rounded-xl ${item.bg}`}>
